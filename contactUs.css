@@ -11,64 +11,6 @@ body{
     font-family: Arial, sans-serif;
 }
 
-
-.header__wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.header__wrapper a img{
-    height: 50px;
-    border-radius: 45px;
-}
-.header__wrapper ul{
-    display: flex;
-    padding: 15px;
-    margin: 0px;
-    list-style: none;
-}
-.header__wrapper ul li a{
-    text-decoration: none;
-    font-style: italic;
-    margin: 0px 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 999;
-    color: #555;
-}
-
-header {
-    background-color:black;
-    color: white;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-}
-
-nav a:hover {
-    color: #ddd;
-}
-
 .containerr{
     width: 80%;
     margin: 50px auto;

@@ -2,95 +2,88 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    font-family:'Times New Roman', Times, serif ;
 }
 
-
 /* header style -------------- */
+
+header {
+    background-color:transparent;
+    padding: 1em 0;
+    background-color: #fff;
+}
+
 .header__wrapper{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header__wrapper a img{
-    height: 50px;
-    border-radius: 45px;
+.header__wrapper .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .header__wrapper ul{
     display: flex;
     padding: 15px;
     margin: 0px;
     list-style: none;
 }
+
 .header__wrapper ul li a{
     text-decoration: none;
-    font-style: italic;
     margin: 0px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 999;
-    color: #555;
+    font-weight: 600;
+    color: #000;
 }
-
-header {
-    background-color:#000;
-    color: white;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-}
-
-nav a:hover {
-    color: #ddd;
-}
-
-
 
 /* hero section style ------- */
 .hero__section{
     width: 100%;
-    background-image: url('./images/makeup.png.webp');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./images/headerImage.webp');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
-body {
-    font-family:'Times New Roman', Times, serif ;
+.hero__section-content{
+    margin-bottom: 140px;
 }
 
 .hero__section h3 {
-    font-size: 1.5em; 
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: #555;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: .42em;
+}
+
+.hero__section button{
+    color: #fff;
+    width: fit-content;
+    padding: 17px 30px 17px 30px;
+    background-color: #000;
+    border: 1px solid #000;
 }
 
 .hero__section h1 {
-    font-size: 70px;
-    font-style: italic;
-    font-weight: lighter;
-    font-family: cursive;
-    color: rosybrown;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 90px;
+    line-height: 1.02;
+    letter-spacing: .2em;
 }
 
 .hero__section p {
@@ -101,20 +94,12 @@ body {
 }
 
 
-.hero__section .content{
-    padding: 170px 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-
-
-
 /* Products Slider -----------*/
 .product{
     position: relative;
     overflow: hidden;
-    padding: 20px;
+    padding: 100px 0px;
+    background: #f3f3f3;
 }
 
 .product-category{
@@ -126,7 +111,9 @@ body {
 
 .product-container{
     display: flex;
+    height: auto;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
 }
 
@@ -139,6 +126,7 @@ body {
     width: 250px;
     height: 450px;
     margin-right: 40px;
+    background-color: #fff;
 }
 
 .product-image{
@@ -146,23 +134,28 @@ body {
     width: 100%;
     height: 300px;
     overflow: hidden;
+    padding: 20px;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+.discount-tag{
+    position: absolute;
+    content: "";
+    background: #000;
+    padding: 5px;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
 }
 
 .product-thumb{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.discount-tag{
-    position: absolute;
-    background: white;
-    padding: 5px;
-    border-radius: 5px;
-    color: darkgray;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
 }
 
 .card-btn{
@@ -193,15 +186,19 @@ body {
 
 .product-info{
     width: 100%;
-    height: 140px;
-    padding-top: 10px;
+    height: auto;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
 }
 
 .product-brand{
+    font-size: 24px;
     text-transform: uppercase;
+    letter-spacing: 0.20em;
 }
 
 .product-short-description{
@@ -212,6 +209,7 @@ body {
     opacity: 0.5;
     text-transform: capitalize;
     margin: 5px 0;
+    letter-spacing: 0.25em;
 }
 
 .price{
@@ -294,6 +292,55 @@ body {
     margin-bottom: 10px;
 }
 
+/*-------testimonials---------*/
+.testimonials{
+    width: 60%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonial-col +.testimonial-col {
+    margin-left: 100px; 
+}
+
+
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa{
+    color: #f44336;
+}
+
+
+
+
 
 /* footer style ----- */
 footer {
@@ -321,6 +368,7 @@ footer {
 
 .footer__info p {
     line-height: 1.5;
+    font-size: larger;
 }
 
 .footer__links{
@@ -335,6 +383,7 @@ footer {
 
 .footer__links li {
     margin-bottom: 10px;
+    font-size: larger;
 }
 
 .footer__links a {
@@ -369,29 +418,6 @@ footer {
 
 .footer__icons a:hover {
     transform: scale(1.2);
-}
-
-
-@media screen and (max-width: 600px){
-    .menu{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-    }
-    .list{
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-    .navbar label{
-        display: inline-flex;
-        align-items: center;
-        cursor: pointer;
-    }
-    #toggler:checked ~ .menu{
-        max-height: 100%;
-    }
-    
 }
 
 
