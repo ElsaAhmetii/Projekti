@@ -91,11 +91,23 @@ tr td:first-child{
 
 
 
-@media screen and (max-width: 1279px){
-   .contact-box{
-    display: block;
-   }
-   header{
-    display: block;
-   }
+@media (min-width: 768px) {
+    .contact-box {
+        flex-direction: row;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 50%;
+    }
+
+    .input-row {
+        flex-direction: row;
+    }
+
+    .input-row .input-group {
+        flex-basis: 48%;
+        margin-right: 4%;
+        margin-bottom: 0;
+    }
 }

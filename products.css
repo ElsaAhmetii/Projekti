@@ -207,3 +207,20 @@ p {
 }
 
 
+@media (max-width: 768px) {
+    .product {
+        margin-left: 0;
+    }
+
+    .product-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-card {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
