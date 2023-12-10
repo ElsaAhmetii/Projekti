@@ -36,6 +36,10 @@ body{
     font-style: italic;
 }
 
+.about__page{
+    padding: 100px 0px;
+}
+
 .about{
     display: flex;
     justify-content: space-between;
