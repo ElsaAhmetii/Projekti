@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* hero section style ------- */
+
 .hero__section{
     width: 100%;
     background-image: url('./images/makeup.png.webp');
@@ -37,11 +37,6 @@ p {
     font-size: 1.2em;  
 }
 
-.hero__section .content{
-    padding: 100px 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 /* Products -----------*/
 
 .product{
@@ -49,6 +44,11 @@ p {
     overflow: hidden;
     padding: 100px 0px;
     background: #f3f3f3;
+    margin-left: 190px;
+}
+
+.product h2{
+    margin-top: 70px;
 }
 
 .product-category{
