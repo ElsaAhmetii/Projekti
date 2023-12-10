@@ -5,7 +5,7 @@ body {
     font-family:'Times New Roman', Times, serif ;
 }
 
-/* header style -------------- */
+/* --------- header style ----------- */
 
 header {
     background-color:transparent;
@@ -41,7 +41,7 @@ header {
     color: #000;
 }
 
-/* hero section style ------- */
+/* ------------ hero section style ------- */
 .hero__section{
     width: 100%;
     width: 100%;
@@ -94,7 +94,7 @@ header {
 }
 
 
-/* Products Slider -----------*/
+/* ----------- Products Slider -----------*/
 .product{
     position: relative;
     overflow: hidden;
@@ -259,6 +259,9 @@ header {
     opacity: 1;
 }
 
+
+
+
 .collection-container{
     width: 100%;
     display: grid;
@@ -292,7 +295,7 @@ header {
     margin-bottom: 10px;
 }
 
-/*-------testimonials---------*/
+/*------- testimonials ---------*/
 .testimonials{
     width: 60%;
     margin: auto;
@@ -316,7 +319,6 @@ header {
     margin-left: 100px; 
 }
 
-
 .testimonial-col img{
     height: 40px;
     margin-left: 5px;
@@ -339,10 +341,7 @@ header {
 }
 
 
-
-
-
-/* footer style ----- */
+/* --------- footer style ------- */
 footer {
     background-color: #000;
     padding: 50px 0;

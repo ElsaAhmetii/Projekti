@@ -9,8 +9,7 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 20px auto;
-    
+    margin: 20px auto;   
 }
 
 .heading h1{
@@ -37,12 +36,6 @@ body{
     font-style: italic;
 }
 
-.container{
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px 20px;
-}
-
 .about{
     display: flex;
     justify-content: space-between;
@@ -60,7 +53,6 @@ body{
     max-width: 100%;
     height: auto;
     display: block;
-    transition: 0.5s ease;
 }
 
 .about-content{
@@ -95,85 +87,6 @@ body{
     background-color: #3e8e41;
 }
 
-
-
-
-footer {
-    background-color: #000;
-    padding: 50px 0;
-    color: #333;
-}
-
-.footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer__info,
-.footer__links,
-.footer__icons {
-    flex: 1;
-    max-width: 33%;
-}
-
-.footer__info h2,
-.footer__links h2 {
-    color: #333;
-}
-
-.footer__info p {
-    line-height: 1.5;
-    font-size: larger;
-}
-
-.footer__links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.footer__links ul {
-    list-style: none;
-    padding: 20px;
-}
-
-.footer__links li {
-    margin-bottom: 10px;
-    font-size: larger;
-}
-
-.footer__links a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease-in-out;
-}
-
-.footer__links a:hover {
-    color: #c9c2aa;
-}
-
-.footer__icons {
-    text-align: center;
-}
-
-.footer__icons h2 {
-    margin-bottom: 10px;
-}
-
-.footer__icons a {
-    display: inline-block;
-    text-decoration: none;
-    transition: transform 0.3s ease-in-out;
-    margin: 0 10px;
-}
-
-.footer__icons img {
-    width: 20px;
-    height: 20px;
-}
-
-.footer__icons a:hover {
-    transform: scale(1.2);
-}
 
 
 @media screen and (max-width: 768px){
