@@ -105,16 +105,25 @@ body{
     left: 450px;
 }
 
+@media (max-width: 768px) {
+    .form-box {
+        width: 90%;
+    }
 
+    .button-box,
+    .input-group,
+    .submit-btn {
+        width: 100%;
+        max-width: none;
+    }
 
+    #login {
+        left: 0;
+    }
 
-@media screen and (max-width: 1279px){
-   .contact-box{
-    display: block;
-   }
-   header{
-    display: block;
-   }
+    #register {
+        left: 100%;
+    }
 }
 
 

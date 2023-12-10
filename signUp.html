@@ -54,7 +54,7 @@
             </div>
             <form id="login" class="input-group">
                 <input type="text" class="input-field" placeholder="Name" required>
-                <input type="text" class="input-field" placeholder="Enter password" required>
+                <input type="password" class="input-field" placeholder="Enter password" required>
                 <button type="submit" class="submit-btn">Log in</button>
             </form>
             <form id="register" class="input-group">
@@ -83,7 +83,37 @@
             z.style.left = "0px";
         }
     </script>
+
+
+
+    <script>
+        let nameRegex = /^[A-Z][a-z]{3, 10}$/;
+        let passwordRegex = /^[A-Z][a-z0-9.-_]{3,10}$/;
+
+        function validateForm(){
+        let nameInput = document.getElementById('name');
+        let nameError = document.getElementById('nameError');
+        let passwordInput = document.getElementById('password');
+        let passwordError = document.getElementById('passwordError');
+
+        nameError.innerHTML = '';
+        passwordError.innerText = '';
+
+        if(!nameRegex.test(nameInput.value)){
+            nameError.innerText = 'invalid name';
+            return;
+        }
+        if(!passwordRegex.test(passwordInput.value)){
+            passwordError.innerText = 'invalid password';
+            return;
+        }
+
+        alert('form submitted succesfully!');
+    }
+    </script>
         
+
+
         <footer>
             <div class="container">
                 <div class="footer__wrapper">

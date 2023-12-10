@@ -88,37 +88,62 @@ body{
 }
 
 
+@media only screen and (max-width: 768px) {
 
-@media screen and (max-width: 768px){
-    .heading{
-        padding: 0px 20px;
+    header {
+        padding: 0.5em 0;
     }
-    .heading h1{
-        font-size: 36px;
-    }
-    .heading p{
-        font-size: 17px;
-        margin-bottom: 0px;
-    }
-    .container{
-        padding: 0px;
-    }
-    .about{
-        padding: 20px;
+
+    .header__wrapper {
         flex-direction: column;
+        align-items: center;
     }
-    .about-image{
-        margin-right: 0px;
+
+    .header__wrapper ul {
+        margin-top: 10px;
+    }
+
+    .hero__section h1 {
+        font-size: 60px;
+    }
+
+    .hero__section p {
+        font-size: 1em;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+
+    .testimonial-col {
+        flex-basis: 100%;
+        margin-left: 0;
         margin-bottom: 20px;
     }
-    .about-content p{
-        padding: 0px;
-        font-size: 16px;
+
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    .about-content .read-more{
-        font-size: 16px;
+
+    .footer__info,
+    .footer__links,
+    .footer__icons {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        margin-right: 0;
     }
 }
+
 
 
 
